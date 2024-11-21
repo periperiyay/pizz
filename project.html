@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEPE PIZZA</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: orangered;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar Styles */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ff4500;
+            padding: 10px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 5px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #e03e00;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 20px;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        #home {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: url('https://images.unsplash.com/photo-1548365328-97b1b1fb9b8d') no-repeat center center fixed;
+            background-size: cover;
+            padding: 100px;
+            text-align: left;
+        }
+
+        #home h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        #home .home-text {
+            flex: 1;
+            color: #ffffff;
+        }
+
+        #home .home-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        #home img {
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        #about, #menu, #service, #contact {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .menu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu-item {
+            background-color: #292929;
+            border: 2px solid #ff4500;
+            border-radius: 8px;
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .menu-item h3 {
+            margin: 10px 0 5px;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: #ff4500;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#service">Service</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home">
+        <div class="home-text">
+            <h1>Welcome to PEPE PIZZA</h1>
+            <p>Your one-stop destination for delicious pizzas.</p>
+        </div>
+        <div class="home-image">
+            <img src="https://images.unsplash.com/photo-1606152196365-d1ce5ea838b5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pizza">
+        </div>
+    </section>
+
+    <section id="about">
+        <h1>About Us</h1>
+        <pre>Welcome to pepe PIZZA, where passion for great pizza meets the art of
+            tradition. Our story begins with a simple love for crafting the perfect 
+           pie. From our dough to our signature sauces, every ingredient is carefully 
+           selected to bring you a mouthwatering experience in every bite.
+           At AAPKA PIZZA, we pride ourselves on using only the freshest, high-quality 
+           ingredients. Whether you’re craving a classic Margherita or a custom 
+           creation, we have something to satisfy every pizza lover’s palate. Our 
+           pizzas are hand-crafted, made to order, and baked to perfection in our 
+           state-of-the-art ovens, ensuring a crispy crust and perfectly melted cheese 
+           every time.
+           Our team is dedicated to bringing you not just a meal, but an experience. 
+           Whether you’re dining in with friends and family, picking up a quick bite,  
+           or having pizza delivered to your door, we guarantee top-notch service and a 
+           slice of joy with every order.
+           Join us at AAPKA PIZZA and discover why we’re more than just pizza 
+            – we’re a passion for flavor, quality, and community!</pre>
+    </section>
+
+    <section id="menu">
+        <h1>Our Menu</h1>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://scotsclub.com.au/wp-content/uploads/2019/03/new-pizza2.jpg" alt="Pepperoni Pizza">
+                <h3>Pepperoni Pizza</h3>
+                <p>Price: &#8377;499</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://media.istockphoto.com/id/1295773428/photo/pizza-with-cheese-isolated-on-white-background-clipping-path-full-depth-of-field.jpg?s=612x612&w=0&k=20&c=Oomq20XpoHKvkMROs5doC26BSWxrZH8Gs6sYIEPMtKs=">
+                <h3>Margherita Pizza</h3>
+                <p>Price: &#8377;300</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://img.freepik.com/premium-photo/margherita-pizza_795323-63.jpg
+                " alt="Veggie Pizza">
+                <h3>Veggie Pizza</h3>
+                <p>Price: &#8377;400</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="service">
+        <h1>Our Services</h1>
+        <pre>At [Your Pizza Brand Name], we offer a variety of services to make sure 
+            your pizza experience is always fresh, fast, and delicious. Whether you’re 
+            enjoying a night out or hosting a celebration, we’ve got you covered.
+    
+                1. Dine-In Experience
+                
+                Join us at our cozy pizzeria for a warm, welcoming atmosphere where you can 
+                enjoy your favorite pizza, freshly made in front of you. Our friendly staff 
+                is ready to serve you, making it the perfect place to relax with family and 
+                friends.
+                
+                2. Takeout
+                In a hurry or craving pizza at home? Our convenient takeout service lets you 
+                grab your favorite pizza to go. Simply place your order online or by phone, 
+                and we’ll have your pizza ready for pickup when you arrive.
+                
+                3. Delivery
+                Craving pizza but don’t want to leave the comfort of your home? No problem! 
+                Our fast and reliable delivery service will bring your pizza right to your 
+                door, hot and fresh, so you can enjoy a perfect meal without the hassle.
+                
+                4. Catering
+                Planning a party, corporate event, or special occasion? Let us handle the 
+                food! Our catering services offer a variety of pizza options, sides, and 
+                drinks, perfect for any gathering. We’ll work with you to create a 
+                customized menu to suit your event, ensuring that your guests are treated to 
+                an unforgettable pizza feast.
+                
+                5. Custom Pizza Creations
+                At [Your Pizza Brand Name], you’re the chef! Create your own custom pizza by 
+                selecting from a wide range of toppings, crusts, and sauces. Whether you 
+                prefer a classic combo or something completely unique, we’re here to make 
+                your pizza dreams come true.
+                
+                6. Special Deals & Promotions
+                We believe everyone should enjoy great pizza at great prices. Keep an eye on 
+                our special offers, combos, and seasonal deals to get the best value on your 
+                favorite pies. Sign up for our newsletter or follow us on social media to 
+                stay updated on the latest promotions.
+                
+                No matter how you choose to enjoy your pizza, we’re here to make it an 
+                experience you’ll keep coming back for.</pre>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Email: support@aapkapizza.com</p>
+        <p>Phone: +91 1234567890</p>
+    </section>
+
+    <footer>
+        &copy; 2024 AAPKA PIZZA. All rights reserved.
+    </footer>
+
+    <script>
+        // Smooth scrolling for all links
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
